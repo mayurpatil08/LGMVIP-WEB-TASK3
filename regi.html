@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="regi.css">
+</head>
+<body>
+    <div class="topdiv"><h1> Student Registration Form </h1></div>
+  <div class="container">
+    <div class="form-container">
+      <!-- <h2></h2> -->
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="first-name"><b>First Name:</b></label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name"><b>Last Name:</b></label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><b>Email:</b></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password"><b>Password:</b></label>
+          <input type="password" id="password" name="password" required>
+        </div>
+ <div class="form-group">
+          <label for="gender"><b>Gender:</b></label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><b>Skills:</b></label>
+          <div class="skills-options">
+            <label for="skill-java">
+              <input type="checkbox" id="skill-java" name="skills" value="java"> Java
+            </label>
+
+        <label for="skill-python">
+          <input type="checkbox" id="skill-python" name="skills" value="python"> Python
+        </label>
+
+        <label for="skill-c">
+          <input type="checkbox" id="skill-c" name="skills" value="c"> C
+        </label>
+
+        <label for="skill-data-structures">
+          <input type="checkbox" id="skill-data-structures" name="skills" value="data-structures"> Data Structures
+        </label>
+
+<label for="skill-web-development">
+          <input type="checkbox" id="skill-web-development" name="skills" value="web-development"> Web Development
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="photo"><b>Photo:</b></label>
+      <input type="file" id="photo" name="photo">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Register">
+      <input type="button" id="clear-btn" value="Clear" style="background-color: red;">
+    </div>
+  </form>
+</div>
+<div class="result-container">
+  <h2>Registered Details</h2>
+  <div id="display-data"></div>
+  <div id="display-photo"></div>
+</div>
+<script src="regi.js">
+  
+</script>
+</body>
+</html>
